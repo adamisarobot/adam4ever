@@ -1,0 +1,15 @@
+/* --- Navigation --- */
+.primary-nav {
+	font-size: 0;
+
+	.button {
+		display: inline-block;
+		font-size: 0;
+		border-radius: ($baseSpacing * 0.5);
+
+		i {
+			font-size: ($baseFontSize * 3);
+			color: $black;
+		}
+	}
+}
