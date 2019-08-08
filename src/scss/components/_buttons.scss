@@ -1,0 +1,10 @@
+// Buttons
+
+.button,
+%button {
+
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 -5px 10px $black;
+	}
+}
