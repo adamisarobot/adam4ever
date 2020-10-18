@@ -54,11 +54,10 @@ gulp.task('sass', function() {
 		.pipe(sass().on('error', sass.logError))
 		.pipe(
 			autoprefixer({
-				browsers: ['last 2 versions'],
 				grid: 'no-autoplace'
 			})
 		)
-		.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(browserSync.reload({ stream: true }));
 });

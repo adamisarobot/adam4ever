@@ -1,0 +1,43 @@
+// --- Typography ---
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $bodyFont;
+	@include fluid-type($minWidth, $maxWidth, $minFont, $maxFont);
+	padding-top: 7rem;
+	background-color: $lightestGrey;
+
+	@include respond-above('sm') {
+		padding-top: 10rem;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $headingFont;
+	color: $black;
+	margin: 0;
+	padding-bottom: 0.25em;
+}
+
+h1 {
+	font-size: ($baseFontSize * 4);
+}
+
+h2 {
+	font-size: ($baseFontSize * 3);
+}
+
+h3 {
+	font-size: ($baseFontSize * 2);
+}
+
+.heading {
+	border-bottom: 0.2rem solid $grey;
+}
